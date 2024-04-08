@@ -58,7 +58,7 @@
 <ul>
 <li>Access to WordPress website with RestAPI enabled.</li>
 <li>Proper setup and configuration of MariaDB, Google Gemini API, OpenAI API, and Google Translate API.</li>
-<li>Linux environment for hosting the Jumpbox and executing the cronjob.</li>
+<li>Linux environment for hosting the Jumpbox and executing the crontab job.</li>
 </ul>
 <h2 id="section"><img src="https://github.com/albert-projects/python-wp-autoposts/blob/master/screenshot.png" alt="Screenshot"></h2>
 <p>python-wp-autoposts<br>

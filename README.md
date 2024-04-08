@@ -3,7 +3,7 @@
 
 ---
 
-<p>Web scraping by Python and create post with WordPress RestAPI.</p>
+<p>Automatic web scraping by Python and schedule create post with WordPress RestAPI.</p>
 <p>This open project is made available under the following terms and conditions:</p>
 <ul>
 <li><strong>Academic and Technical Exchange Usage Only:</strong> This project is intended solely for academic and technical exchange purposes. It is provided to facilitate learning, research, and collaboration within academic and technical communities.</li>

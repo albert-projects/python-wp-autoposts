@@ -1,0 +1,8 @@
+[console_scripts]
+diazocompiler = diazo.compiler:main
+diazopreprocessor = diazo.rules:main
+diazorun = diazo.run:main
+
+[paste.filter_app_factory]
+main = diazo.wsgi:DiazoMiddleware
+xslt = diazo.wsgi:XSLTMiddleware

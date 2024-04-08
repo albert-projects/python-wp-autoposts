@@ -19,7 +19,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 '''
 
 config = configparser.ConfigParser()
-config.read("config-data.ini")
+config.read("/home/ubuntu/python/config-data.ini")
 
 # Maria DB login
 host = config.get("MariaDB", "host")

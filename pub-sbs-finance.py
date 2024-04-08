@@ -25,7 +25,7 @@ import configparser
 from PIL import Image
 
 config = configparser.ConfigParser()
-config.read("config-data.ini")
+config.read("/home/ubuntu/python/config-data.ini")
 
 #Open AI api key
 openai.api_key = config.get("OpenAI", "api-key")

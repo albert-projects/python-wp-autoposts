@@ -17,7 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import configparser
 
 config = configparser.ConfigParser()
-config.read("config-data.ini")
+config.read("/home/ubuntu/python/config-data.ini")
 # Maria DB login
 host = config.get("MariaDB", "host")
 database = config.get("MariaDB", "database")

@@ -3,7 +3,6 @@
 
 ---
 
-<p>Automatic web scraping by Python and schedule create post with WordPress RestAPI.</p>
 <p>This open project is made available under the following terms and conditions:</p>
 <ul>
 <li><strong>Academic and Technical Exchange Usage Only:</strong> This project is intended solely for academic and technical exchange purposes. It is provided to facilitate learning, research, and collaboration within academic and technical communities.</li>
@@ -14,8 +13,54 @@
 </ul>
 <p>By accessing or using this project, you agree to abide by the terms of this license. If you do not agree with these terms, you are not permitted to access or use the materials within this project.</p>
 <hr>
-<p>This project undertakes web scraping from various sources, followed by translation into English, Traditional Chinese, and Simplified Chinese, before being posted onto a WordPress website located at <a href="https://ozeasy.com/">https://ozeasy.com</a>. The project integrates WordPress, MariaDB, Google Gemini API, OpenAI API, Google Translate API, and SEO optimization techniques. A Linux Jumpbox executes a Python cronjob to scrape posts and transmit them to WordPress using RestAPI.</p>
-<hr>
+<h1 id="multilingual-web-scraping-and-translation-integration-for-wordpress">Multilingual Web Scraping and Translation Integration for WordPress</h1>
+<p>This project orchestrates a comprehensive workflow encompassing web scraping from diverse sources, subsequent translation into English, Traditional Chinese, and Simplified Chinese, and finally, publishing the content onto a WordPress website hosted at <a href="https://ozeasy.com/">https://ozeasy.com</a>. The integration seamlessly merges various technologies including WordPress, MariaDB, Google Gemini API, OpenAI API, Google Translate API, and SEO optimization techniques. A Linux Jumpbox serves as the operational hub, executing a Python cronjob to scrape posts and transmit them to WordPress using RestAPI.</p>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li>
+<p><strong>Web Scraping:</strong> Automated scraping of content from multiple sources.</p>
+</li>
+<li>
+<p><strong>Multilingual Translation:</strong> Translates scraped content into English, Traditional Chinese, and Simplified Chinese for broader audience reach.</p>
+</li>
+<li>
+<p><strong>WordPress Integration:</strong> Publishes translated content onto a WordPress website, ensuring timely updates and engagement.</p>
+</li>
+<li>
+<p><strong>API Integration:</strong> Utilizes Google Gemini API, OpenAI API, and Google Translate API for various functionalities such as language translation and content optimization.</p>
+</li>
+<li>
+<p><strong>SEO Optimization:</strong> Implements techniques to enhance search engine visibility and improve website ranking.</p>
+</li>
+<li>
+<p><strong>Automated Cronjob:</strong> A Python cronjob running on a Linux Jumpbox automates the scraping and publishing process, ensuring consistency and efficiency.</p>
+</li>
+</ul>
+<h2 id="technologies-used">Technologies Used</h2>
+<ul>
+<li>WordPress</li>
+<li>MariaDB</li>
+<li>Google Gemini API</li>
+<li>OpenAI API</li>
+<li>Google Translate API</li>
+<li>Linux Jumpbox</li>
+<li>Python</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Configure the necessary APIs and credentials required for translation and other functionalities.</li>
+<li>Set up a Linux Jumpbox with the required dependencies and permissions.</li>
+<li>Clone this repository onto the Jumpbox.</li>
+<li>Configure the Python cronjob to run at specified intervals for scraping and publishing content.</li>
+<li>Monitor the process and troubleshoot any issues that may arise.</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Access to WordPress website with RestAPI enabled.</li>
+<li>Proper setup and configuration of MariaDB, Google Gemini API, OpenAI API, and Google Translate API.</li>
+<li>Linux environment for hosting the Jumpbox and executing the cronjob.</li>
+</ul>
+<h2 id="section"><img src="https://github.com/albert-projects/python-wp-autoposts/blob/master/screenshot.png" alt="Screenshot"></h2>
 <p>python-wp-autoposts<br>
 Albert Kwan<br>
 April 2024</p>

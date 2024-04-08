@@ -13,5 +13,9 @@ This open project is made available under the following terms and conditions:</p
 <li><strong>No Warranty:</strong> This project is provided “as is,” without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. The authors of this project disclaim any liability for damages resulting from the use or misuse of the provided materials.</li>
 </ul>
 <p>By accessing or using this project, you agree to abide by the terms of this license. If you do not agree with these terms, you are not permitted to access or use the materials within this project.</p>
-<p>python-wp-autoposts</p>
+<hr>
+<p>“This project undertakes web scraping from various sources, followed by translation into English, Traditional Chinese, and Simplified Chinese, before being posted onto a WordPress website located at <a href="https://ozeasy.com/">https://ozeasy.com</a>. The project integrates WordPress, MariaDB, Google Gemini API, OpenAI API, Google Translate API, and SEO optimization techniques. A Linux Jumpbox executes a Python cronjob to scrape posts and transmit them to WordPress using RestAPI.”</p>
+<hr>
+<p>python-wp-autoposts<br>
+Albert Kwan</p>
 

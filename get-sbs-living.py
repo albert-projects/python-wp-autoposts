@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import mysql.connector
 from mysql.connector import Error
 import time
+import configparser
 
 '''
 from requests_html import HTMLSession
@@ -17,10 +18,9 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 '''
 
-import configparser
-
 config = configparser.ConfigParser()
 config.read("config-data.ini")
+
 # Maria DB login
 host = config.get("MariaDB", "host")
 database = config.get("MariaDB", "database")
@@ -146,6 +146,12 @@ def insert_content(host, database, user, password):
                 s = s.replace("None", "null")
                 s = s.replace("], [", ", ")
                 s = s.replace("}]]", "}]")
+                s = s.replace("“", "")
+                s = s.replace("”", "")
+                s = s.replace("\'s", "s")
+                s = s.replace("\"s", "s")
+                s = s.replace("{src\"", "{\"src\"")
+                #s = s.replace("\"", "")
                 #s = s.replace("\"\'", "\"")
                 print(s)
                 content_json = json.loads(s)

@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import mysql.connector
 from mysql.connector import Error
 import time
-
+import configparser
 '''
 from requests_html import HTMLSession
 from selenium import webdriver
@@ -17,10 +17,9 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 '''
 
-import configparser
-
 config = configparser.ConfigParser()
 config.read("config-data.ini")
+
 # Maria DB login
 host = config.get("MariaDB", "host")
 database = config.get("MariaDB", "database")

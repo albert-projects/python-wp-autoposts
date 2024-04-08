@@ -3,8 +3,8 @@
 
 ---
 
-<p>Web scraping by Python and create post with WordPress RestAPI.<br>
-This open project is made available under the following terms and conditions:</p>
+<p>Web scraping by Python and create post with WordPress RestAPI.</p>
+<p>This open project is made available under the following terms and conditions:</p>
 <ul>
 <li><strong>Academic and Technical Exchange Usage Only:</strong> This project is intended solely for academic and technical exchange purposes. It is provided to facilitate learning, research, and collaboration within academic and technical communities.</li>
 <li><strong>Non-Commercial Usage:</strong> The materials, data, code, and any associated resources provided within this project are not to be used for commercial purposes. Commercial usage, including but not limited to reproduction, distribution, or exploitation for financial gain, is strictly prohibited without explicit authorization.</li>
@@ -14,8 +14,9 @@ This open project is made available under the following terms and conditions:</p
 </ul>
 <p>By accessing or using this project, you agree to abide by the terms of this license. If you do not agree with these terms, you are not permitted to access or use the materials within this project.</p>
 <hr>
-<p>“This project undertakes web scraping from various sources, followed by translation into English, Traditional Chinese, and Simplified Chinese, before being posted onto a WordPress website located at <a href="https://ozeasy.com/">https://ozeasy.com</a>. The project integrates WordPress, MariaDB, Google Gemini API, OpenAI API, Google Translate API, and SEO optimization techniques. A Linux Jumpbox executes a Python cronjob to scrape posts and transmit them to WordPress using RestAPI.”</p>
+<p>This project undertakes web scraping from various sources, followed by translation into English, Traditional Chinese, and Simplified Chinese, before being posted onto a WordPress website located at <a href="https://ozeasy.com/">https://ozeasy.com</a>. The project integrates WordPress, MariaDB, Google Gemini API, OpenAI API, Google Translate API, and SEO optimization techniques. A Linux Jumpbox executes a Python cronjob to scrape posts and transmit them to WordPress using RestAPI.</p>
 <hr>
 <p>python-wp-autoposts<br>
-Albert Kwan</p>
+Albert Kwan<br>
+April 2024</p>
 

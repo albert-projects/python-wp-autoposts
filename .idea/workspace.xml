@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df04224e-bc73-4027-9987-a05e778d8644" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-at-url.py" beforeDir="false" afterPath="$PROJECT_DIR$/get-at-url.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-sbs-finance.py" beforeDir="false" afterPath="$PROJECT_DIR$/get-sbs-finance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-sbs-immigration.py" beforeDir="false" afterPath="$PROJECT_DIR$/get-sbs-immigration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-sbs-living.py" beforeDir="false" afterPath="$PROJECT_DIR$/get-sbs-living.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get-sbs-news.py" beforeDir="false" afterPath="$PROJECT_DIR$/get-sbs-news.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pub-at.py" beforeDir="false" afterPath="$PROJECT_DIR$/pub-at.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pub-sbs-finance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pub-sbs-finance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pub-sbs-immigration.py" beforeDir="false" afterPath="$PROJECT_DIR$/pub-sbs-immigration.py" afterDir="false" />

@@ -513,7 +513,7 @@ def wordpress_post(title, feature_img, com_header, slug_txt, slug_cn, chi_conten
     # user account for WordPress
     # Get the secret file config file
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")
@@ -1009,7 +1009,7 @@ def set_tag_lang(tag_cn_id, trans_zh_id, trans_en_id):
     # user account for WordPress
     # Get the secret file config file
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")
@@ -1043,7 +1043,7 @@ def get_tag_id(tag_slug):
     # user account for WordPress
     # Get the secret file config file
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")
@@ -1119,7 +1119,7 @@ def create_tag(tag_name, lang):
     # user account for WordPress
     # Get the secret file config file
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")
@@ -1220,7 +1220,7 @@ def wordpress_upload_image(src):
     # user account for WordPress
     # Get the secret file config file
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")

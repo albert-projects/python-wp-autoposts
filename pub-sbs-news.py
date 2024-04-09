@@ -380,7 +380,7 @@ def filter_unwant(sentence):
 def wordpress_upload_image(src):
     # user account for WordPress
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")
@@ -496,7 +496,7 @@ def remove_html_tags(raw_html):
 def wordpress_post(title, feature_img, post_body):
     # user account for WordPress
     config = configparser.ConfigParser()
-    config.read("config-data.ini")
+    config.read("/home/ubuntu/python/config-data.ini")
     user = config.get("WP-REST-API", "user")
     password = config.get("WP-REST-API", "password")
     token_api = config.get("WP-REST-API", "token")

@@ -303,35 +303,6 @@ def conv_trad(src):
     # Convert to Trad Chiniese
     converter = opencc.OpenCC('s2hk.json')
     cc = converter.convert(src)
-    cc = cc.replace("請點擊圖標，收聽播客。", "")
-    cc = cc.replace("收聽播客。", "")
-    cc = cc.replace("請點擊圖標", "")
-    cc = cc.replace("歡迎點擊收聽。", "")
-    cc = cc.replace("歡迎點擊收聽", "")
-    cc = cc.replace("本台", "")
-    cc = cc.replace("點擊音頻，收聽完整報道。", "")
-    cc = cc.replace("歡迎點擊音頻，收聽採訪。", "")
-    cc = cc.replace("點擊音頻", "")
-    cc = cc.replace("收聽完整報道", "")
-    cc = cc.replace("收聽採訪", "")
-    cc = cc.replace("歡迎點擊音頻", "")
-    cc = cc.replace("澳大利亞", "澳洲")
-    cc = cc.replace("點擊收聽本期節目。", "")
-    cc = cc.replace("上方完整音頻）", "")
-    cc = cc.replace("完整音頻", "")
-    cc = cc.replace("請音頻：", "")
-    cc = cc.replace("音頻", "")
-    cc = cc.replace("點擊", "")
-    cc = cc.replace("收聽", "")
-    cc = cc.replace("（播客詳情）", "")
-    cc = cc.replace("播客詳情", "")
-    cc = cc.replace("（播客）", "")
-    cc = cc.replace("，完整採訪。", "")
-    cc = cc.replace("完整採訪", "")
-    cc = cc.replace("採訪。", "")
-    cc = cc.replace("，完整", "")
-    cc = cc.replace("（請全部內容）", "")
-    cc = cc.replace("本節目", "")
     cc = cc.replace("（）", "")
     cc = cc.replace("()", "")
     cc = cc.replace("’", "'")
@@ -353,14 +324,7 @@ def conv_simp(src):
 
 def filter_unwant(sentence):
     ind = 0
-    filter_out = ["SBS中文",
-                  "收聽完整",
-                  "收聽詳細",
-                  "詳細報道",
-                  "免費觀看",
-                  "最新報道",
-                  "完整採訪",
-                  "SBS Audio"
+    filter_out = ["S中文"
                  ]
     for word in filter_out:
         if word in sentence:
@@ -702,23 +666,8 @@ def wordpress_post(title, feature_img, post_body):
     # print(r)
     print(r.text)
 
-def remove_sbs(html):
-    unwanted_words = ['SBS中文',
-                      'SBS Audio',
-                      'sbs.com.au',
-                      '<b>請在\xa0</b>',
-                      '<b>和\xa0</b>',
-                      '<b>\xa0請在</b>',
-                      '<b>\xa0和</b>',
-                      '<b>請在</b>',
-                      '<b>和</b>',
-                      '<b>\xa0請在\xa0</b>',
-                      '<b>\xa0和\xa0</b>',
-                      '<b> 請在 </b>',
-                      '<b> 和 </b>',
-                      '关注SBS',
-                      'SBS',
-                      '關注SBS'
+def sbs(html):
+    unwanted_words = ['中文'
                       ]
 
     my_list  = html
@@ -1025,7 +974,7 @@ def get_sbs_content(url):
             node_ind += 1
 
     # the whole body content
-    clean_body = remove_sbs(post_body)
+    clean_body = sbs(post_body)
     #print(clean_body)
 
     # post the content to wordpress
